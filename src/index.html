@@ -27,8 +27,22 @@
 </head>
 <body>
     <div class="experience"></div>
+    
+    <!-- Tambahkan UI Overlay -->
+    <div class="overlay">
+        <h2>Welcome to my room!</h2>
+        <p>This is a 3d room that I made using Three.js</p>
+        <button class="button" id="actionButton">My Portfolio</button>
+    </div>
+
     <div class="credits">
         My Room in 3D by <a href="https://safwanrahimi.vercel.app/" target="_blank">Safwan Rahimi</a> (<a href="https://github.com/Safwan3528/my-room-3d" target="_blank">Source code</a>)
     </div>
+
+    <script>
+        document.getElementById('actionButton').addEventListener('click', function() {
+            window.open('https://safwanrahimi.vercel.app/', '_blank');
+        });
+    </script>
 </body>
 </html>
